@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+
+    <ImageView
+        android:id="@+id/logo_image_view"
+        android:layout_width="187dp"
+        android:layout_height="148dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/login_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Login"
+        android:textSize="24sp"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/email_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_text_view"
+        android:layout_margin="16dp"
+        android:hint="Email"/>
+
+    <EditText
+        android:id="@+id/password_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/email_edit_text"
+        android:layout_margin="16dp"
+        android:hint="Password"
+        android:inputType="textPassword"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password_edit_text"
+        android:layout_marginTop="24dp"
+        android:layout_gravity="center"
+        android:text="Login"
+        android:layout_centerHorizontal="true"
+        android:onClick="login"/>
+
+    <TextView
+        android:id="@+id/signup_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_button"
+        android:layout_gravity="center"
+        android:layout_marginTop="24dp"
+        android:text="Don't have an account? Signup"
+        android:onClick="signup"/>
+
+</LinearLayout>
